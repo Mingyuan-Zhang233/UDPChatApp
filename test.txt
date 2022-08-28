@@ -1,0 +1,104 @@
+##################################################################
+Test-case 1(from handout):
+*************************************Console of x ********************************************
+Client process started.
+You may type 'help' to see all commands.
+[Welcome, You are registered.]
+>>> [Client table updated.]
+>>> [Client table updated.]
+>>> [Client table updated.]
+>>> z: hi
+>>> y: hi
+>>> send y hi
+[Message received by y.]
+>>> send z hi
+[Message received by z.]
+>>> dereg x
+Type 'stay' if you don't want to exit the program after de-registration: stay
+[You are Offline. Bye.]
+>>> reg x
+[Welcome back, You are registered.]
+[You have messages!]
+y: 24-Nov-2020 (07:44:56) hi from y
+z: 24-Nov-2020 (07:45:06) hi from z
+>>> [Client table updated.]
+>>> exit
+Exit before de-registration is highly unrecommended.
+If you want to proceed to exit, type 'YES': YES
+
+*******************************************Console of y***************************************
+Client process started.
+You may type 'help' to see all commands.
+[Welcome, You are registered.]
+>>> [Client table updated.]
+>>> [Client table updated.]
+>>> z: hi
+>>> send x hi
+[Message received by x.]
+>>> send z hi
+[Message received by z.]
+>>> x: hi
+>>> [Client table updated.]
+>>> send x hi from y
+[x is offline! Message received by the server and saved]
+>>> [Client table updated.]
+>>> exit
+Exit before de-registration is highly unrecommended.
+If you want to proceed to exit, type 'YES': YES
+
+
+*******************************************Console of z***************************************
+Client process started.
+You may type 'help' to see all commands.
+[Welcome, You are registered.]
+>>> [Client table updated.]
+>>> send x hi
+[Message received by x.]
+>>> send y hi
+[Message received by y.]
+>>> y: hi
+>>> x: hi
+>>> [Client table updated.]
+>>> send x hi from z
+[x is offline! Message received by the server and saved]
+>>> [Client table updated.]
+>>> exit
+Exit before de-registration is highly unrecommended.
+If you want to proceed to exit, type 'YES': YES
+
+##########################################################################
+Test-case 2(from handout):
+
+*****************************************Console of x***************************************************
+Client process started.
+You may type 'help' to see all commands.
+[Welcome, You are registered.]
+>>> [Client table updated.]
+>>> [Client table updated.]
+>>> [Client table updated.]
+>>> send y hi
+[y is offline! Server is not responding. ]
+>>> dereg x
+Type 'stay' if you don't want to exit the program after de-registration: exit
+Cannot reach the server. Retrying...
+Cannot reach the server. Retrying...
+Cannot reach the server. Retrying...
+Cannot reach the server. Retrying...
+Cannot reach the server. Retrying...
+[Server not responding]
+Exiting...
+
+**********************************************Console of y**************************************************
+Client process started.
+You may type 'help' to see all commands.
+[Welcome, You are registered.]
+>>> [Client table updated.]
+>>> dereg y
+Type 'stay' if you don't want to exit the program after de-registration: exit
+[You are Offline. Bye.]
+ Exiting...
+
+########################################################################
+Test-case 3 ()
+
+
